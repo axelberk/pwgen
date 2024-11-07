@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Password generator</h2>
+    <div class="generated-pw">
+        <p id="passwordDisplay"></p>
+        <img id="copyButton" src="/images/copy-icon.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="slider-container">
+            <div class="slider-header">
+                <label for="charLength">Character length</label>
+                <span id="charLengthDisplay">15</span>
+            </div>
+            <input type="range" id="charLength" name="charLength" min="8" max="15" value="15">
+        </div>
+        <label class="custom-checkbox" for="includeUpper">
+            <input type="checkbox" id="includeUpper" name="includeUpper">
+            <p>Include Uppercase Letters</p>
+        </label>
+        <label class="custom-checkbox" for="includeLower">
+            <input type="checkbox" id="includeLower" name="includeLower">
+            <p>Include Lowercase Letters</p>
+        </label>
+        <label class="custom-checkbox" for="includeNumbers">
+            <input type="checkbox" id="includeNumbers" name="includeNumbers">
+            <p>Include Numbers</p>
+        </label>
+        <label class="custom-checkbox" for="includeSymbols">
+            <input type="checkbox" id="includeSymbols" name="includeSymbols">
+            <p>Include Symbols</p>
+        </label>
+        <div class="pw-strength">
+            <p class="strength-text">Strength</p>
+            <div class="strength-container">
+                <p style="color: white;"></p>
+                <div class="strength-indicator"></div>
+                <div class="strength-indicator"></div>
+                <div class="strength-indicator"></div>
+                <div class="strength-indicator"></div>
+            </div>
+        </div>
+        <button onclick="generatePassword()">Generate</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

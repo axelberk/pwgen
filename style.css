@@ -1,0 +1,235 @@
+body {
+    background-color: #1d111a;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#passwordDisplay {
+    font-size: 20px;
+    display: flex;
+    justify-content: sp;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+.strength-text {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: -15px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: -15px;
+}
+
+.slider-container .slider-header span {
+    color: #a638f6;
+    font-size: 25px;
+}
+
+#charLength:hover {
+    cursor: pointer;
+}
+
+div {
+    background-color: #2d2039;
+    width: 500px;
+    display: flex;
+    padding: 15px;
+}
+
+.container {
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.generated-pw {
+    display: flex;
+    justify-content: space-between;
+    padding: ;
+}
+
+#copyButton:hover {
+    cursor: pointer;
+}
+
+.pw-strength {
+    background-color: #a638f6;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 20px; 
+    justify-content: space-between;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.strength-container {
+    background-color: inherit;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px;
+    color: white;
+    margin-left: 1px;
+}
+
+.strength-container p {
+    margin-top: 12px;
+    color: white;
+}
+
+.strength-indicator {
+    background-color: inherit;
+    border: 1px solid white;
+    width: 1px;
+    padding: 5px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #a638f6;
+    font-family: 'Roboto Mono', monospace;
+    padding: 27px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box; 
+    border: none;
+}
+
+button:hover {
+    color: black;
+}
+
+.container p {
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.custom-checkbox input {
+    -webkit-appearance: none;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    transition: 0.4s;
+}
+
+.custom-checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.custom-checkbox::before {
+    background-color: #a638f6;
+    color: white;
+    position: absolute;
+    border: 1px solid white;
+    transition: border-color 0.3s;
+}
+
+.custom-checkbox input:checked {
+    background-color: #a638f6;
+    border: none;
+    opacity: 1;
+    content: url("images/checkmark.svg");
+    transition: 0.4s;
+}
+
+.custom-checkbox:hover::before {
+    border-color: #a638f6;
+}
+
+label p {
+    margin-left: 20px;
+}
+
+.slider-container input[type="range"] {
+    -webkit-appearance: none;
+    width: 400px;
+    height: 5px;
+    background: #a638f6;
+    outline: none;
+    margin-top: 5px;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 525px) {
+    body {
+        text-align: center;
+        height: 100vh;
+    }
+
+    div {
+        width: 90%; 
+    }
+
+    .slider-container input[type="range"] {
+        width: 90%; 
+    }
+
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .pw-strength {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+}
